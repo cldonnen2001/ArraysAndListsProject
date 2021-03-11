@@ -15,59 +15,82 @@ namespace ArraysAndLists
             Console.WriteLine("Array list numbers:");
             foreach (var i in numbers)
             {
-                Console.WriteLine($"{i}");       
+                Console.WriteLine($"{i}");
             }
-            
 
-            /* Create two Lists of type int.
-             * Name one List "evens"
-             * Name the other List "odds"
-             */
+            Console.WriteLine("");  // adds space after arry list of numbers
 
-           var evens = new List<int>(numbers);
-           var odds = new List<int>(numbers);
+                 // Create two Lists of type int.
+                 // * Name one List "evens"
+                 // * Name the other List "odds"
 
-            /* Using either a foreach or for loop,
-             * nest an if statement to check to see
-             *  if a number is even or odd.
-             * Then add those numbers to either the evens List
-             * or the odds List
-             */
+            var evens = new List<int>();
+            var odds = new List<int>();
 
-            Console.WriteLine("Here are the Even Numbers: ");
-            foreach (int i in evens)
+                 //Using either a foreach or for loop,
+                 //*nest an if statement to check to see
+                 // *  if a number is even or odd.
+                 // * Then add those numbers to either the evens List
+                 //  *or the odds List
+
+            for (int i = 2; i < 10; i += 2)
             {
-                if (i % 2 == 0)
-                {
-                    Console.WriteLine($"{i}");
-                }
+                evens.Add(i);
             }
+
+            for (int i = 1; i < 10; i += 2)
+            {
+                odds.Add(i);
+            }
+                  //* Now using foeach or for loops,
+                  //  * display each List of even and odd numbers
+                  //   * Try to be creative in your display
+           
+            Console.WriteLine("Here are the Even Numbers: ");
+                foreach (var num in evens)
+                {
+                  Console.WriteLine(num);
+                }
+
+            Console.WriteLine(""); // adds space after evens list of numbers
 
             Console.WriteLine("The remaining are the Odd Numbers: ");
-            foreach (int i in odds)
-            {
-                if (i % 2 == 1)
-                {
-                    Console.WriteLine($"{i}");
-                }
-            }
+               foreach (var num in odds)
+               {
+                Console.WriteLine(num);
+               }
 
 
-            /* Now using foeach or for loops,
-             * display each List of even and odd numbers
-             *
-             * Try to be creative in your display
-             */
+        // other stuffs
 
-            Console.WriteLine("Array1 list: ");
+            //Console.WriteLine("Array1 list: ");
 
-            int[] array1 = { 11, 12, 13, 14, 15 };
-            foreach (var item in array1)
-            {
-                Console.WriteLine(item);
-            }
-        
-        
+            //int[] array1 = { 11, 12, 13, 14, 15 };
+            //foreach (var item in array1)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //var evenNumbers = new List<int>();
+            //var oddsNumbers = new List<int>();
+
+            //Console.WriteLine("Here are the Even Numbers: ");
+            //foreach (int i in evenNumbers)
+            //{
+            //    if (i % 2 == 0)
+            //    {
+            //        Console.WriteLine($"{i}");
+            //    }
+            //}
+
+            //Console.WriteLine("The remaining are the Odd Numbers: ");
+            //foreach (int i in oddsNumbers)
+            //{
+            //    if (i % 2 == 1)
+            //    {
+            //        Console.WriteLine($"{i}");
+            //    }
+           // }
         }
 
 
