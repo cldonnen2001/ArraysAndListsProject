@@ -61,36 +61,36 @@ namespace ArraysAndLists
                }
 
 
-        // other stuffs
+            //other stuffs
 
-            //Console.WriteLine("Array1 list: ");
+            Console.WriteLine("Array1 list: ");
 
-            //int[] array1 = { 11, 12, 13, 14, 15 };
-            //foreach (var item in array1)
-            //{
-            //    Console.WriteLine(item);
-            //}
+            int[] array1 = { 11, 12, 13, 14, 15 };
+            foreach (var item in array1)
+            {
+                Console.WriteLine(item);
+            }
 
-            //var evenNumbers = new List<int>();
-            //var oddsNumbers = new List<int>();
+            var evenNumbers = new List<int>();
+            var oddsNumbers = new List<int>();
 
-            //Console.WriteLine("Here are the Even Numbers: ");
-            //foreach (int i in evenNumbers)
-            //{
-            //    if (i % 2 == 0)
-            //    {
-            //        Console.WriteLine($"{i}");
-            //    }
-            //}
+            Console.WriteLine("Here are the Even Numbers: ");
+            foreach (int i in evenNumbers)
+            {
+                if (i % 2 == 0)
+                {
+                    Console.WriteLine($"{i}");
+                }
+            }
 
-            //Console.WriteLine("The remaining are the Odd Numbers: ");
-            //foreach (int i in oddsNumbers)
-            //{
-            //    if (i % 2 == 1)
-            //    {
-            //        Console.WriteLine($"{i}");
-            //    }
-           // }
+            Console.WriteLine("The remaining are the Odd Numbers: ");
+            foreach (int i in oddsNumbers)
+            {
+                if (i % 2 == 1)
+                {
+                    Console.WriteLine($"{i}");
+                }
+            }
         }
 
 
